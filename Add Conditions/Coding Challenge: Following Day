@@ -1,0 +1,50 @@
+Write a program that accepts a day name from the user in the variable, then shows the name of the following day. Incorrect inputs must be taken into account.
+
+const day = prompt("Enter a day of the week:");
+
+// Solution using an if
+if (day === "monday" || day === "Monday") {
+  console.log("Tomorrow is Tuesday");
+} else if (day === "tuesday" || day === "Tuesday") {
+  console.log("Tomorrow is Wednesday");
+} else if (day === "wednesday" || day === "Wednesday") {
+  console.log("Tomorrow is Thursday");
+} else if (day === "thursday" || day === "Thursday") {
+  console.log("Tomorrow is Friday");
+} else if (day === "friday" || day === "Friday") {
+  console.log("Tomorrow is Saturday");
+} else if (day === "saturday" || day === "Saturday") {
+  console.log("Tomorrow is Sunday");
+} else if (day === "sunday" || day === "Sunday") {
+  console.log("Tomorrow is Monday");
+} else {
+  console.log("Unrecognized day!");
+}
+
+// Alternative solution using a switch
+/* switch (day) {
+  case "monday":
+    console.log("Tomorrow is tuesday");
+    break;
+  case "tuesday":
+    console.log("Tomorrow is wednesday");
+    break;
+  case "wednesday":
+    console.log("Tomorrow is thursday");
+    break;
+  case "thursday":
+    console.log("Tomorrow is friday");
+    break;
+  case "friday":
+    console.log("Tomorrow is saturday");
+    break;
+  case "saturday":
+    console.log("Tomorrow is sunday");
+    break;
+  case "sunday":
+    console.log("Tomorrow is monday");
+    break;
+  default:
+    console.log("Unrecognized day!");
+} */
+
