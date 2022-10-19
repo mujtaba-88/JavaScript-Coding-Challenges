@@ -8,3 +8,19 @@ while (number >= 10){
 for (var i = 1; i <= 10; i++){
   console.log("Turn number: " + i);
 }
+
+Improved: By getting a user input.
+// Write - Your - Code
+const turnCount = Number(prompt("How many turns?"));
+
+// Solution using a for
+// for (let turn = 1; turn <= turnCount; turn++) {
+//   console.log(`This is turn number ${turn}`);
+// }
+
+// Alternative solution using a while
+let turn = 1;
+while (turn <= turnCount) {
+  console.log(`This is turn number ${turn}`);
+  turn++;
+} 
