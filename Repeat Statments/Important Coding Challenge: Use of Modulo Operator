@@ -1,0 +1,16 @@
+Learn how to use module operator and find even and odd numbers to test your JavaScript skills.
+
+Check the following program that shows even numbers (divisible by 2) between 
+
+This program must show exactly 10 numbers including the first one, not 11 numbers!
+
+let n = 1;
+let check = false;
+for (let i = 1; check == false; i++) {
+  if (i % 2 === 1) {
+    console.log(`${i} is odd`);
+    if(n == 10)
+      check = true;
+    n++;
+  }
+}
