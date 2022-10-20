@@ -1,0 +1,8 @@
+Write a program that continues to ask the user for a number until the entered number is less than or equal to 50.
+
+let number = Math.floor(Math.random()*100); // Generate the number
+while (number > 50) {
+  console.log(`${number} is not less than 50, try again!`);
+  number = Math.floor(Math.random()*100);
+}
+  console.log(`Hooray! You got ${number}`);
