@@ -1,0 +1,11 @@
+Write a program that plays “neither yes, nor no” with the user. Specifically, the program asks the user to enter text until either 'y'
+′y′ or ′n′ is typed, which ends the game.
+
+let input = "";
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"; 
+  console.log(`Let's play "Neither y, nor n" ?`);
+while (input !== "y" && input !== "n") {
+  input=alphabet[Math.floor(Math.random() * alphabet.length)]; // Generate random character from define alphabet
+  console.log(`Choosed character is ${input}`);
+}
+console.log("You just lost!");
