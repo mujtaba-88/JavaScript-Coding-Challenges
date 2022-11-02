@@ -1,0 +1,45 @@
+Discover what you can do with functions and try to implement a simple calculator that can perform all the basic arithmetic operations.
+
+Problem statement#
+Complete the below program so that it offers the four basic arithmetical operations: addition, subtraction, multiplication and division. You can use either a function declaration or a function expression.
+
+Input#
+calculate(4, "+", 6)
+calculate(4, "-", 6)
+calculate(2, "*", 0)
+calculate(12, "/", 0)
+
+Expected output#
+10
+-2
+0
+Infinity
+
+Solution
+
+function calculate(num1,operator,num2){
+		switch(operator){
+      case "+":
+        	console.log(num1 + num2);
+        break;
+        
+      case "-":
+        	console.log(num1 - num2);
+        break;
+        
+      case "*":
+        	console.log(num1 * num2);
+        break; 
+        
+      case "/":
+        	console.log(num1 / num2);
+        break;        
+      default:
+       console.log(undefined);
+    	}
+}
+
+calculate(12,'+',2);
+calculate(12,'-',2);
+calculate(12,'*',2);
+calculate(12,'/',2);
